@@ -59,12 +59,13 @@ calculateMockOrderTotal 2
 type Logger = { log : string -> unit }
 
 let _getOrderItems logger repo orderId =
-    logger (sprintf "** Gettig order %d" orderId)
+    logger.log (sprintf "** Gettig order %d" orderId)
     let orderItems = repo.get orderId
-    logger (sprintf "** Order has %d lines" 3)
+    logger.log (sprintf "** Order has %d lines" (orderItems.Length))
     orderItems
 
-let getOrderItems = _getOrderItems (fun s -> System.Console.WriteLine(s)) MockRepo 
+let getOrderItems = 
+    _getOrderItems { log = fun s -> System.Console.WriteLine(s) } MockRepo 
 
 getOrderItems 2
 

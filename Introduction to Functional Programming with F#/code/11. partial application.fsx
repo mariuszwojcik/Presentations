@@ -2,7 +2,7 @@ let add a b = a + b
 
 let calculateAndPrint calcFunc x y =
     let r = calcFunc x y
-    printfn "Result is: %i" r
+    printfn "Result of calculation on %i and %i is is: %i" x y r
     r
 
 calculateAndPrint add 3 4
