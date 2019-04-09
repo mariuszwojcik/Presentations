@@ -1,0 +1,24 @@
+F# Type System
+==========================
+
+* https://fsharpforfunandprofit.com/posts/overview-of-types-in-fsharp/
+* https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/fsharp-types
+
+
+- algebraic data types -> sum  (discriminated unions) and products (tupes and records)
+	https://en.wikipedia.org/wiki/Algebraic_data_type
+
+
+
+
+Records:
+	with - copy-and-update record expression
+	
+
+
+
+Function signatures
+==========================
+
+https://fsharpforfunandprofit.com/posts/function-signatures/
+

@@ -11,3 +11,8 @@ In this session, I share my journey through building a simple bid recommendation
 ## Introduction to Functional Programming with F#
 
 Presentation I prepared for my colleagues at work to introduce them to Functional Programming.
+
+
+## F# Type System
+
+Presentation I prepared for my colleagues at work to introduce them to type system in F#.
