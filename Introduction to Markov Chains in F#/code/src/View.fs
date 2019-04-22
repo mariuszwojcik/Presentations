@@ -57,7 +57,7 @@ let view (model:Model) dispatch =
 
         div [ Class "messages" ]
           [
-            for m in model.sentMessages ->
+            for m in (model.sentMessages |> Array.truncate 5) ->
               p [ Class "navbar navbar-light bg-light" ] [ str m ]
           ]          
       ]

@@ -18,6 +18,7 @@ let toCanonical (word : string) =
     word.ToLower()
 
 
+
 let createModel corpora =
     corpora
     |> splitWords
